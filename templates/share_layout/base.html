@@ -24,11 +24,10 @@
 
     <link rel="alternate" type="application/rss+xml" title="{{ SITE_NAME }} &raquo; Feed"
           href="/feed"/>
-    <!--看板娘-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
 
     {% compress css %}
+        <!--看板娘-->
+        <link rel="stylesheet" href='{% static 'assets/css/font-awesome.min.css' %}'>
         <link rel='stylesheet' id='twentytwelve-fonts-css'
               href='{% static 'blog/fonts/fonts.css' %}'
               type='text/css' media='all'/>
@@ -77,6 +76,8 @@
 </body>
 <footer>
     {% compress js %}
+        <!--看板娘-->
+        <script src='{% static 'assets/js/autoload.js' %}'></script>
         <script type="text/javascript" src="{% static 'blog/js/jquery-3.1.1.js' %}"></script>
         <script type="text/javascript" src="{% static 'blog/js/nprogress.js' %}"></script>
         <script src="{% static 'blog/js/blog.js' %}" type="application/javascript"></script>
